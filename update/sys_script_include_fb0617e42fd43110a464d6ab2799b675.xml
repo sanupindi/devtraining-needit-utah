@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.NeedItUtils_Sirisha</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>NeedItUtils_Sirisha</name>
+        <script><![CDATA[var NeedItUtils_Sirisha = Class.create();
+NeedItUtils_Sirisha.prototype = {
+    initialize: function() {},
+
+    isDatePast: function(strDate) {
+        var rightNow = new GlideDateTime();
+        var givenDateTime = new GlideDateTime(strDate);
+
+
+        if (givenDateTime.before(rightNow)) {
+
+            return true;
+
+        } else if (givenDateTime.getDate() == rightNow.getDate()) {
+            return true;
+        } else return false;
+
+    },
+
+    type: 'NeedItUtils_Sirisha'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-24 23:28:21</sys_created_on>
+        <sys_id>fb0617e42fd43110a464d6ab2799b675</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>NeedItUtils_Sirisha</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_fb0617e42fd43110a464d6ab2799b675</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-24 23:33:15</sys_updated_on>
+    </sys_script_include>
+</record_update>
